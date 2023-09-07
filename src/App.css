@@ -1,1 +1,38 @@
+h1 {
+  text-align: center;
+}
 
+ul {
+  padding: 0;
+}
+
+.col {
+  border-right: 1px solid black;
+}
+
+.col:last-of-type {
+  border-right: none;
+}
+
+.card {
+  text-align: center;
+  padding: 9px;
+}
+
+.btn {
+  margin-left: 6px;
+}
+
+.btn-2 {
+  background: red;
+  color: white;
+}
+
+.btn-3 {
+  background: blue;
+  color: white;
+}
+
+.btn-4 {
+  background: yellow;
+}
