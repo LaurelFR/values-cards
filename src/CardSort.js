@@ -48,7 +48,7 @@ export default function CardSort(data) {
           <hr />
           <ul>
             {array1.map((strings, index) => (
-              <li key={index} className="card mb-2">
+              <li key={index} className="card shadow mb-2">
                 {strings.map((string, index) => (
                   <span key={index}>{string}</span>
                 ))}
@@ -77,15 +77,17 @@ export default function CardSort(data) {
           </ul>
         </div>
         <div className="col">
-          <h2>2: Very Important</h2>
+          <h2>
+            2: Very Important <i class="fa-solid fa-star"></i>
+          </h2>
           <hr />
           <ul>
             {array2.map((strings, index) => (
-              <li key={index} className="card">
+              <li key={index} className="card mb-2">
                 {strings.map((string, index) => (
                   <span key={index}>{string}</span>
                 ))}
-                <div>
+                <div className="mt-3">
                   <button
                     className="btn btn-3"
                     onClick={() => moveString2(strings, array3, setArray3)}
@@ -104,15 +106,17 @@ export default function CardSort(data) {
           </ul>
         </div>
         <div className="col">
-          <h2>3: Important</h2>
+          <h2>
+            3: Important <i class="fa-solid fa-square"></i>
+          </h2>
           <hr />
           <ul>
             {array3.map((strings, index) => (
-              <li key={index} className="card">
+              <li key={index} className="card mb-2">
                 {strings.map((string, index) => (
                   <span key={index}>{string}</span>
                 ))}
-                <div>
+                <div className="mt-3">
                   <button
                     className="btn btn-2"
                     onClick={() => moveString3(strings, array2, setArray2)}
@@ -131,15 +135,17 @@ export default function CardSort(data) {
           </ul>
         </div>
         <div className="col">
-          <h2>4: Not Important</h2>
+          <h2>
+            4: Not Important <i class="fa-solid fa-circle-xmark"></i>
+          </h2>
           <hr />
           <ul>
             {array4.map((strings, index) => (
-              <li key={index} className="card">
+              <li key={index} className="card mb-2">
                 {strings.map((string, index) => (
                   <span key={index}>{string}</span>
                 ))}
-                <div>
+                <div className="mt-3">
                   <button
                     className="btn btn-2"
                     onClick={() => moveString4(strings, array2, setArray2)}
