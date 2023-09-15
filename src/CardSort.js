@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Instructions from "./Instructions";
+import Summary from "./Summary";
 
 export default function CardSort(data) {
   const arrayOne = data.data;
   // Initialize four arrays and their state variables
-  const [array1, setArray1] = useState(arrayOne);
-  const [array2, setArray2] = useState([]);
-  const [array3, setArray3] = useState([]);
-  const [array4, setArray4] = useState([]);
+  const [array1, setArray1] = useState(arrayOne); //array1 = Values Cards
+  const [array2, setArray2] = useState([]); //array2 = Very Important
+  const [array3, setArray3] = useState([]); //array3 = Important
+  const [array4, setArray4] = useState([]); //array4 = Not Important
   // Function to move the string from array1 to the selected destination array
   const moveString = (string, destinationArray, setDestinationArray) => {
     // Find the index of the string in array1
@@ -15,28 +16,28 @@ export default function CardSort(data) {
 
     // Remove the string from array1 and add it to the destination array
     setArray1(array1.filter((_, i) => i !== index));
-    setDestinationArray([...destinationArray, string]);
+    setDestinationArray([string, ...destinationArray]);
   };
 
   const moveString2 = (string, destinationArray, setDestinationArray) => {
     const index = array2.indexOf(string);
 
     setArray2(array2.filter((_, i) => i !== index));
-    setDestinationArray([...destinationArray, string]);
+    setDestinationArray([string, ...destinationArray]);
   };
 
   const moveString3 = (string, destinationArray, setDestinationArray) => {
     const index = array3.indexOf(string);
 
     setArray3(array3.filter((_, i) => i !== index));
-    setDestinationArray([...destinationArray, string]);
+    setDestinationArray([string, ...destinationArray]);
   };
 
   const moveString4 = (string, destinationArray, setDestinationArray) => {
     const index = array4.indexOf(string);
 
     setArray4(array4.filter((_, i) => i !== index));
-    setDestinationArray([...destinationArray, string]);
+    setDestinationArray([string, ...destinationArray]);
   };
 
   return (
@@ -91,6 +92,12 @@ export default function CardSort(data) {
               </li>
             ))}
           </ul>
+          <Summary
+            cards={array1}
+            veryImportant={array2}
+            important={array3}
+            notImportant={array4}
+          />
         </div>
         <div className="col very-important">
           <h2>

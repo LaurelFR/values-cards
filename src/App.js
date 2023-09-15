@@ -91,7 +91,7 @@ const App = () => {
   ];
 
   return (
-    <div>
+    <div className="App">
       <CardSort data={words} />
     </div>
   );
