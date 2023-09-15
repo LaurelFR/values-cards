@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Instructions from "./Instructions";
 
 export default function CardSort(data) {
   const arrayOne = data.data;
@@ -7,7 +8,6 @@ export default function CardSort(data) {
   const [array2, setArray2] = useState([]);
   const [array3, setArray3] = useState([]);
   const [array4, setArray4] = useState([]);
-
   // Function to move the string from array1 to the selected destination array
   const moveString = (string, destinationArray, setDestinationArray) => {
     // Find the index of the string in array1
@@ -41,7 +41,8 @@ export default function CardSort(data) {
 
   return (
     <div className="container">
-      <h1 className="mt-3 mb-2">Personal Values Card Sort</h1>
+      <Instructions />
+      <h1 className="mb-2">Personal Values Card Sort</h1>
       <p className="text-center mb-1">
         Based on Personal Values Card Sort by W.R. Miller, J.C'de Baca, D.B.
         Matthews, P.L. Wilbourne, University of New Mexico, 2001
