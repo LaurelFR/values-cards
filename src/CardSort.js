@@ -59,8 +59,10 @@ export default function CardSort(data) {
         </a>
       </p>
       <div className="row">
-        <div className="col card-column">
-          <h2>Values Cards</h2>
+        <div className="col-md-3 col-6 card-column">
+          <div className="column-heading">
+            <h2>Values Cards</h2>
+          </div>
           <hr />
           <ul>
             {array1.map((strings, index) => (
@@ -68,7 +70,7 @@ export default function CardSort(data) {
                 {strings.map((string, index) => (
                   <span key={index}>{string}</span>
                 ))}
-                <div className="mt-2">
+                <div className="mt-2 buttons">
                   <button
                     className="btn btn-2"
                     onClick={() => moveString(strings, array2, setArray2)}
@@ -99,11 +101,13 @@ export default function CardSort(data) {
             notImportant={array4}
           />
         </div>
-        <div className="col very-important">
-          <h2>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i> Very Important
-          </h2>
+        <div className="col-md-3 col-6 very-important">
+          <div className="column-heading">
+            <h2>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i> Very Important
+            </h2>
+          </div>
           <hr />
           <ul>
             {array2.map((strings, index) => (
@@ -129,10 +133,12 @@ export default function CardSort(data) {
             ))}
           </ul>
         </div>
-        <div className="col important">
-          <h2>
-            <i className="fa-solid fa-star"></i> Important
-          </h2>
+        <div className="col-md-3 col-6 important">
+          <div className="column-heading">
+            <h2>
+              <i className="fa-solid fa-star"></i> Important
+            </h2>
+          </div>
           <hr />
           <ul>
             {array3.map((strings, index) => (
@@ -159,10 +165,12 @@ export default function CardSort(data) {
             ))}
           </ul>
         </div>
-        <div className="col not-important">
-          <h2>
-            <i className="fa-solid fa-circle-xmark"></i> Not Important
-          </h2>
+        <div className="col-md-3 col-6 not-important">
+          <div className="column-heading">
+            <h2>
+              <i className="fa-solid fa-circle-xmark"></i> Not Important
+            </h2>
+          </div>
           <hr />
           <ul>
             {array4.map((strings, index) => (
