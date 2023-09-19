@@ -31,6 +31,12 @@ li span:nth-of-type(2n) {
   font-size: 15px;
 }
 
+.btn.new-value-button {
+  background: rgb(255, 102, 0);
+  width: 50%;
+  color: white;
+}
+
 .Summary .summary-screen .line {
   color: black;
   border-top: 2px solid black;
@@ -45,8 +51,8 @@ li span:nth-of-type(2n) {
 .summary-screen {
   background: white;
   color: black;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 95vh;
   padding: 10px;
   position: fixed;
   z-index: 2;
@@ -56,6 +62,10 @@ li span:nth-of-type(2n) {
   border: 12px solid rgb(255, 102, 0);
   border-radius: 14px;
   overflow: scroll;
+}
+
+.summary-row {
+  margin: 0;
 }
 
 .summary-screen h2 {
@@ -284,7 +294,7 @@ li span:nth-of-type(2n) {
   }
 
   .instructions-screen {
-    width: 80vw;
+    width: 85vw;
   }
 
   .instructions-screen h2 {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export default function Summary(props) {
-  const veryImportant = props.veryImportant;
-  const important = props.important;
-  const notImportant = props.notImportant;
+  const veryImportant = [...props.veryImportant.sort()];
+  const important = [...props.important.sort()];
+  const notImportant = [...props.notImportant.sort()];
 
   const [active, setActive] = useState(false);
 
@@ -26,8 +26,8 @@ export default function Summary(props) {
           </div>
           <h2 className="mb-0">Summary</h2>
           <hr className="line" />
-          <div className="row">
-            <div className="col very-important-summary">
+          <div className="row summary-row">
+            <div className="col-md-4 col-12 very-important-summary">
               <h3 className="text-center">Very Important</h3>
               <ul>
                 {veryImportant.map((strings, index) => (
@@ -39,7 +39,7 @@ export default function Summary(props) {
                 ))}
               </ul>
             </div>
-            <div className="col">
+            <div className="col-md-4 col-12">
               <h3 className="text-center">Important</h3>
               <ul>
                 {important.map((strings, index) => (
@@ -51,7 +51,7 @@ export default function Summary(props) {
                 ))}
               </ul>
             </div>
-            <div className="col">
+            <div className="col-md-4 col-12">
               <h3 className="text-center">Not Important</h3>
               <ul>
                 {notImportant.map((strings, index) => (
