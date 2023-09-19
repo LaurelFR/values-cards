@@ -46,7 +46,7 @@ export default function CardSort(data) {
   };
 
   return (
-    <div className="container">
+    <div className="CardSort container">
       <Instructions />
       <h1 className="mb-2">Personal Values Card Sort</h1>
       <p className="text-center mb-1">
@@ -69,7 +69,7 @@ export default function CardSort(data) {
             <h2>Values Cards</h2>
           </div>
           <hr />
-          <ul>
+          <ul className="screen-list">
             {array1.map((strings, index) => (
               <li key={index} className="card shadow mb-2">
                 {strings.map((string, index) => (

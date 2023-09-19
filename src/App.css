@@ -368,3 +368,56 @@ li span:nth-of-type(2n) {
     font-size: 14px;
   }
 }
+
+@media print {
+  .CardSort .row ul.screen-list {
+    display: none;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .card-column,
+  .very-important,
+  .important,
+  .not-important {
+    background: none;
+    border: none;
+  }
+
+  .summary-screen {
+    background: white;
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    border: none;
+    line-height: 12px;
+  }
+
+  .summary-screen h2 {
+    display: none;
+  }
+
+  .summary-screen hr {
+    display: none;
+  }
+
+  .summary-screen h3 {
+    font-size: 15px;
+  }
+
+  .summary-screen span:nth-of-type(2n) {
+    font-size: 11px;
+  }
+
+  .summary-screen span:first-of-type {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .fa-xmark {
+    display: none;
+  }
+}
