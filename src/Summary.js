@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export default function Summary(props) {
-  const veryImportant = [...props.veryImportant.sort()];
-  const important = [...props.important.sort()];
-  const notImportant = [...props.notImportant.sort()];
+  const veryImportant = props.veryImportant;
+  const important = props.important;
+  const notImportant = props.notImportant;
 
   const [active, setActive] = useState(false);
 
@@ -14,6 +14,9 @@ export default function Summary(props) {
 
   function handleClick(event) {
     event.preventDefault();
+    veryImportant.sort();
+    important.sort();
+    notImportant.sort();
     setActive(true);
   }
 
@@ -70,7 +73,7 @@ export default function Summary(props) {
   } else {
     return (
       <div className="Summary d-flex justify-content-center">
-        <button className="btn summary-button" onClick={handleClick}>
+        <button className="btn summary-button mt-1" onClick={handleClick}>
           Summary
         </button>
       </div>

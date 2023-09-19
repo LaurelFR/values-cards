@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Instructions from "./Instructions";
 import Summary from "./Summary";
+import NewValue from "./NewValue";
 
 export default function CardSort(data) {
   const arrayOne = data.data;
@@ -38,6 +39,10 @@ export default function CardSort(data) {
 
     setArray4(array4.filter((_, i) => i !== index));
     setDestinationArray([string, ...destinationArray]);
+  };
+
+  const addToMyArray = (newValue) => {
+    setArray1([...array1, newValue]);
   };
 
   return (
@@ -94,6 +99,7 @@ export default function CardSort(data) {
               </li>
             ))}
           </ul>
+          <NewValue addToParentArray={addToMyArray} />
           <Summary
             cards={array1}
             veryImportant={array2}

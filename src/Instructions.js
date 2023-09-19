@@ -16,7 +16,10 @@ export default function Instructions() {
     return (
       <div className="Instructions">
         <div className="d-flex justify-content-end mt-3">
-          <button className="btn instructions-button" onClick={handleClick}>
+          <button
+            className="btn instructions-button shadow"
+            onClick={handleClick}
+          >
             Instructions
           </button>
         </div>
@@ -30,7 +33,8 @@ export default function Instructions() {
             their own central values and consider how they might reflect those
             values in their daily lives. The usual procedure is to have the
             person sort the cards into 3-5 piles based on how important each
-            value is. This set provides 3 piles to designate cards:
+            value is. After you have sorted the provided values, you may add
+            additional values. This set provides 3 piles to designate cards:
           </p>
           <ul>
             <li>
@@ -55,7 +59,10 @@ export default function Instructions() {
   } else {
     return (
       <div className="Instructions d-flex justify-content-end mt-3">
-        <button className="btn instructions-button" onClick={handleClick}>
+        <button
+          className="btn instructions-button shadow"
+          onClick={handleClick}
+        >
           Instructions
         </button>
       </div>
