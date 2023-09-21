@@ -17,7 +17,7 @@ const App = () => {
     ["Challenge", "to take on difficult tasks and problems"],
     ["Change", "to have a life full of change and variety"],
     ["Comfort", "to have a pleasant and comfortable life"],
-    ["Commitment", "to make enduring, meaninful commitments"],
+    ["Commitment", "to make enduring, meaningful commitments"],
     ["Compassion", "to feel and act on concern for others"],
     ["Contribution", "to make a lasting contribution in the world"],
     ["Cooperation", "to work collaboratively with others"],

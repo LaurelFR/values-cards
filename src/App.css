@@ -79,12 +79,20 @@ li span:nth-of-type(2n) {
 }
 
 .summary-screen h2 {
-  color: black;
-  font-size: 30px;
+  display: none;
+}
+
+.summary-screen hr {
+  display: none;
 }
 
 .summary-screen h3 {
   font-weight: bold;
+  font-size: 19px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .summary-screen ul {
@@ -92,12 +100,12 @@ li span:nth-of-type(2n) {
 }
 
 .summary-screen span:nth-of-type(2n) {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .summary-screen span:first-of-type {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn.instructions-button {
@@ -394,6 +402,8 @@ li span:nth-of-type(2n) {
     padding: 0;
     border: none;
     line-height: 12px;
+    overflow: visible !important;
+    display: block !important;
   }
 
   .summary-screen h2 {
