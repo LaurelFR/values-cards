@@ -29,12 +29,12 @@ export default function Instructions() {
           </div>
           <h2>User Information</h2>
           <p>
-            The Personal Values Card Sort is intended to help people clarify
-            their own central values and consider how they might reflect those
-            values in their daily lives. The usual procedure is to have the
-            person sort the cards into 3-5 piles based on how important each
-            value is. After you have sorted the provided values, you may add
-            additional values. This set provides 3 piles to designate cards:
+            The Personal Values Card Sort is intended to help you clarify your
+            own central values and consider how you might reflect those values
+            in your daily life. The usual procedure is to sort the cards into
+            3-5 piles based on how important each value is to you. After you
+            have sorted the provided values, you may add additional values. This
+            set provides 3 piles to designate cards:
           </p>
           <ul>
             <li>
