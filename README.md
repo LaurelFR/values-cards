@@ -16,7 +16,7 @@ The Personal Values Card Sort is intended to help people clarify their own centr
 
 This process can strengthen your understanding of yourself and teach you much about your guiding principles for living.
 
-This Personal Values Card Sort is currently hosted here: [Values Card Sort] (https://values-cards.netlify.app)
+This Personal Values Card Sort is currently hosted here: [Values Card Sort](https://values-cards.netlify.app)
 
 ## Credits
 
